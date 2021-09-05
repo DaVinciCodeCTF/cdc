@@ -1,0 +1,128 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{% A4
+    a4paper,
+    inner=10mm,
+    outer=10mm,
+    top=10mm,
+    columnsep=4mm,
+    footskip=2mm
+    }
+
+    %\geometry{landscape}                % Activate for for rotated page geometry
+    %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+    \usepackage{graphicx}
+    \graphicspath{{img/}}
+    \usepackage{amssymb}
+    \usepackage{davincicode}
+    \usepackage{multicol}
+    \usepackage{shadowtext}
+
+    \usepackage{fancyhdr}
+
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyfootoffset[RO,LE]{0mm}
+    \fancyfoot[C]{\bf\color{red}}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+
+    % Will Robertson's fontspec.sty can be used to simplify font choices.
+    % To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+    % and change "Hoefler Text" to any of these choices.
+
+    \usepackage{fontspec,xltxtra,xunicode}
+    %\defaultfontfeatures{Mapping=tex-text}
+    %\setromanfont[Mapping=tex-text]{Hoefler Text}
+    %\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+    %\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+    %\title{Brief Article}
+    %\author{The Author}
+    %\date{}                                           % Activate to display a given date or no date
+
+    \begin{document}
+
+    \backgroundpages
+    \setlength{\columnsep}{-1cm}
+    \begin{multicols}{2}\raggedbottom\color{white}
+        \noindent
+        \parbox[t][40mm][t]{\columnwidth}{\setlength{\parindent}{1em}
+        \vspace*{-18mm}
+        \includegraphics[height=30mm]{davincicode}
+        \includegraphics[height=30mm]{esilv}
+        %\vspace*{5mm}
+        }
+
+        \noindent
+        \parbox[c][40mm][c]{\columnwidth}{\setlength{\parindent}{0em}
+        %\vfill
+        \shadowoffsetx{1pt}
+        \shadowoffsety{0pt}
+        \shadowcolor{black}
+        \vspace*{-24mm}
+        \shadowtext{\noindent{\Huge \textsc{DaVinciCode}}}
+        \vspace{0.5cm}
+        \shadowtext{\Large \textbf{Infrastructure}: Cahier des charges}
+        %\vspace*{\vfill}
+        }
+
+    \end{multicols}
+    %\vspace*{2mm}
+    \vspace*{-30mm}
+    \raggedbottom
+    \section{Introduction}
+
+    Le projet “Infrastructure” vise à créer et administrer les serveurs, les services et le réseau chez DaVinciCode.\\
+Deux types de serveurs seront utilisés par l’association :
+
+    \begin{itemize}
+        \item{Le serveur “principal” qui contiendra le site web de DaVinciCode ainsi que d’autres services informatiques importants tel que SMTP. }
+        \item{Un ou plusieurs serveurs “laboratoires” dont le but est de contenir un ensemble d’outils récurrents dans les challenges de cybersécurité. Ils pourront aussi servir de machines de test pour l’exécution de malware par exemple. }
+    \end{itemize}
+
+    \section{Détails}
+    En plus d’administrer les utilisateurs (pour les laboratoires principalement), l’équipe devra s’occuper des différents serveurs :
+
+\noindent Serveur principal :
+\begin{itemize}
+    \item{Fullstack de la landing page (changement de la page statique actuelle, langage de la programmation web ouvert à la discussion).}
+    \item{Création des pages autours du site internet :}
+    \item{Pages des membres}
+    \item{Replay des masterclass (embeded depuis YouTube ou self-host)}
+\end{itemize}
+
+\noindent Serveur principal et/ou laboratoires:
+
+\begin{itemize}
+    \item{VPN (Wireguard surement) (possiblement sur les 2 serveurs selon les services intégrés)}
+    \item{GitLab}
+    \item{CTFNote}
+    \item{Chatroom (TS3 et IRC)}
+    \item{Cyberchef / Ciphey}
+    \item{Excalibur}
+    \item{SMTP}
+    \item{ELK}
+    \item{Outils récurrents dans le domaine de la cybersécurité (Metasploit, hydra, gobuster, nikto,…)}
+\end{itemize}
+
+\noindent Réseau local:
+
+\begin{itemize}
+    \item{DNS}
+    \item{Honeypots}
+    \item{Malware Zoo}
+    \item{Machines forensique dynamique}
+\end{itemize}
+
+\noindent Cette liste est non exhaustive, peut très bien être divisée entre les membres de l’équipe et est classée dans l’ordre d’importance des tâches, les dernières (Réseau local) sont plus une forme de bonus. La tâche des honeypots pourra faire l’objet d’un cahier des charges séparés comprenant les objectifs plus en détails de cette tâche.
+
+\end{document}  

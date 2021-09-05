@@ -1,0 +1,126 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{% A4
+    a4paper,
+    inner=10mm,
+    outer=10mm,
+    top=10mm,
+    columnsep=4mm,
+    footskip=2mm
+    }
+
+    %\geometry{landscape}                % Activate for for rotated page geometry
+    %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+    \usepackage{graphicx}
+    \graphicspath{{img/}}
+    \usepackage{amssymb}
+    \usepackage{davincicode}
+    \usepackage{multicol}
+    \usepackage{shadowtext}
+
+    \usepackage{fancyhdr}
+
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyfootoffset[RO,LE]{0mm}
+    \fancyfoot[C]{\bf\color{red}}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+
+    % Will Robertson's fontspec.sty can be used to simplify font choices.
+    % To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+    % and change "Hoefler Text" to any of these choices.
+
+    \usepackage{fontspec,xltxtra,xunicode}
+    %\defaultfontfeatures{Mapping=tex-text}
+    %\setromanfont[Mapping=tex-text]{Hoefler Text}
+    %\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+    %\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+    %\title{Brief Article}
+    %\author{The Author}
+    %\date{}                                           % Activate to display a given date or no date
+
+    \begin{document}
+
+    \backgroundpages
+    \setlength{\columnsep}{-1cm}
+    \begin{multicols}{2}\raggedbottom\color{white}
+        \noindent
+        \parbox[t][40mm][t]{\columnwidth}{\setlength{\parindent}{1em}
+        \vspace*{-18mm}
+        \includegraphics[height=30mm]{davincicode}
+        \includegraphics[height=30mm]{esilv}
+        %\vspace*{5mm}
+        }
+
+        \noindent
+        \parbox[c][40mm][c]{\columnwidth}{\setlength{\parindent}{0em}
+        %\vfill
+        \shadowoffsetx{1pt}
+        \shadowoffsety{0pt}
+        \shadowcolor{black}
+        \vspace*{-24mm}
+        \shadowtext{\noindent{\Huge \textsc{DaVinciCode}}}
+        \vspace{0.5cm}
+        \shadowtext{\Large \textbf{Hacker Arsenal}: Cahier des charges}
+        %\vspace*{\vfill}
+        }
+
+    \end{multicols}
+    %\vspace*{2mm}
+    \vspace*{-30mm}
+    \raggedbottom
+    \section{Introduction}
+    Le projet "Hacker Arsenal" vise à mixer l'Internet Of Things (IOT), l'électronique et la cybersécurité afin de recréer, prototyper et fabriquer des outils électroniques ayant une utilité pour les hackers éthiques ou pentesters.\\
+Plusieurs cas de figures s'ouvrent à nous pour la création de ces outils :
+    \begin{itemize}
+        \item{Réalisation de plan détaillé déjà créé avec software et hardware.}
+        \item{Réalisation de plan détaillé déjà créé avec software et hardware en adaptant le hardware pour des microcontrôleurs ou microprocesseurs moins coûteux (avec adaptation simple du software si nécessaire).}
+        \item{Création de système embarqué pour servir de hardware à un software déjà créé.}
+        \item{Création de système embarqué et du software.}
+    \end{itemize}
+    \noindent Dans tous les cas, chaque outil créé durant l'année fera l'objet d'une réalisation technique, de la création d'une notice détaillée pour reproduire chaque étape de l'installation software ainsi que de l'assemblement hardware (et des circuits électroniques si besoin est).
+
+    \section{Listes d’outils potentiels}
+    \begin{itemize}
+        \item{Badusb}
+        \item{Usbkiller}
+        \item{Pineapple clone}
+        \item{Bashbunny clone}
+        \item{Screen clab clone}
+        \item{Keylogger}
+        \item{RFID cloner}
+        \item{MSKB sniffer / Keysweeper}
+        \item{Wifi deauther}
+        \item{Wifi jammer}
+        \item{Bluetooth jammer (?)}
+        \item{Open sesame}
+        \item{MagSspoofer}
+        \item{Netsplit}
+        \item{OMG cable/Usb samurai}
+    \end{itemize}
+
+    \noindent Cette liste n’est pas exhaustive, et seulement certains outils pourraient finir par être choisis.
+
+    \section{Détails techniques}
+
+    Le choix de chaque outil donnera lieu à la création d’un cahier des charges et une notice séparés, contenant notamment mais pas exclusivement :
+
+    \begin{itemize}
+        \item{Le détails pièce par pièce et références du hardware}
+        \item{Un lien vers un gist ou repository github avec le code}
+        \item{Une notice de soudure avec un circuit électronique (si nécessaire)}
+        \item{Une notice d’installation}
+        \item{Une notice d’utilisation}
+    \end{itemize}
+
+\end{document}  
