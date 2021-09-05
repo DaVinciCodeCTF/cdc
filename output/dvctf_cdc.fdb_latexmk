@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1630856544 "output/dvctf_cdc.xdv" "output/dvctf_cdc.pdf" "output/dvctf_cdc" 1630856552
+["xdvipdfmx"] 1630857266 "output/dvctf_cdc.xdv" "output/dvctf_cdc.pdf" "output/dvctf_cdc" 1630857269
   "output/dvctf_cdc.xdv" 1630856312 51740 2761c1850cbd3c8b10d0bb9241eee496 "xelatex"
   (generated)
   "output/dvctf_cdc.pdf"
-["xelatex"] 1630856311 "dvctf_cdc.tex" "output/dvctf_cdc.xdv" "dvctf_cdc" 1630856552
+["xelatex"] 1630856311 "dvctf_cdc.tex" "output/dvctf_cdc.xdv" "dvctf_cdc" 1630857269
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -135,9 +135,9 @@
   "davincicode.sty" 1629050815 1034 a606c986af0f98a289346ad90cad3b94 ""
   "dvctf_cdc.tex" 1630855802 6818 9ad18c1b0ad97cad5c8d704837902c61 ""
   "img//davincicode.pdf" 1629559590 689333 37dc4c1f6cbcffb925c498240263d29c ""
-  "img//esilv.eps" 1629046302 718342 c66482a062646ae1fc929edf2aa5e33b ""
+  "img//esilv.eps" 1630857233 718342 c66482a062646ae1fc929edf2aa5e33b ""
   "output/dvctf_cdc.aux" 1630856312 614 dc017fee318631f83cac871e667b7ebc "xelatex"
   (generated)
-  "output/dvctf_cdc.log"
   "output/dvctf_cdc.xdv"
   "output/dvctf_cdc.aux"
+  "output/dvctf_cdc.log"
