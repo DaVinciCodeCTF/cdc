@@ -81,12 +81,44 @@
     \raggedbottom
     \section{Introduction}
 
-    Une compétition Capture The Flag (CTF) est une compétition de cybersécurité, dans laquelle les participants doivent énumérer et exploiter des failles informatiques dans des environnements délibérément vulnérables afin de retrouver des flags (des chaines de caractères formatées et donc facilement repérables, tel que \verb+ESILV{c3c1_3st_1_fl4g}+) qui leur permet d’obtenir des points.\\ Ces compétitions regroupent plusieurs catégories, tels que la cryptographie, la stéganographie, le web, l’algorithmie, etc. Les CTF s’adressent aux personnes intéressées par la securité informatique et qui souhaitent s’exercer et apprendre: les participants partagent leurs solutions des challenges à la fin de la compétition. Nous proposons d’organiser un tournoi CTF, pour:
+    Une compétition Capture The Flag (CTF) est une compétition de cybersécurité, dans laquelle les participants doivent énumérer et exploiter des failles informatiques dans des environnements délibérément vulnérables afin de retrouver des flags (des chaînes de caractères formatées et donc facilement repérables, tel que \verb+ESILV{c3c1_3st_1_fl4g}+) qui leur permet d’obtenir des points.\\ Ces compétitions regroupent plusieurs catégories, telles que la cryptographie, la stéganographie, le web, l’algorithmie, etc. Les CTF s’adressent aux personnes intéressées par la sécurité informatique et qui souhaitent s’exercer et apprendre : les participants partagent leurs solutions des challenges à la fin de la compétition. Nous proposons d’organiser un tournoi CTF, pour :
     \begin{itemize}
         \item{développer la majeure IOS}
-        \item{faire découvrir la cybersécurité aux étudiants qui n’ont toujours choisi de majeure}
+        \item{faire découvrir la cybersécurité aux étudiants qui n’ont toujours pas choisi de majeure}
         \item{faire découvrir l’ESILV aux participants souhaitant poursuivre leurs études dans une école d’ingénieur}
     \end{itemize}
+
+	\section{Informations pratiques}
+	\subsection{Années recherchées}
+	\begin{itemize}
+		\item A2
+		\item A3
+		\item A4
+		\item A5
+	\end{itemize}
+
+    \subsection{Connaissances pré-requises}
+	\begin{itemize}
+		\item Participation à des CTF et/ou wargames (root-me, THM, HTB)
+		\item Maîtrise d'un langage de programmation pertinent pour une catégorie de challenge 
+		\begin{itemize}
+			\item Reverse :  C, C++, C#, Go, Rust ...
+			\item Web : PHP, Javascript, Python, .NET ...
+			\item Pwn : C
+			\item Cryptographie : Python, Sage
+			\item Android : Java, Kotlin
+			\item Programmation : Python...
+			\item Web3 : Solidity...
+		\end{itemize}
+		\item Maîtrise de l'anglais lu
+	\end{itemize}
+	
+	\subsection{Connaissances appréciées}
+	\begin{itemize}
+		\item Maîtrise particulière d'une catégorie commune ou non en CTF (il existe des challenges sur Discord, sur Minecraft, etc.)
+		\item Containerisation (Docker)
+		\item Gitlab CI/CD
+	\end{itemize}
 
     \section{Détail du projet}
     Nous voulons réaliser un tournoi CTF en ligne qui soit accessible aux personnes débutantes. Pour cela, nous allons devoir:
@@ -100,16 +132,16 @@
 
     \section{Détails techniques}
 
-Les challenges devront être classifié dans une des catégories suivantes : Web, Forensics, Reverse, Pwn, OSINT/Recon, Programmation, Hardware/Réseau, Stéganographie, Cryptographie, Blockchain, Misc. Toutes les catégories ne devront pas forcément être représentées.  Toute autre catégorie non mentionnée ici devra être approuvée par l’association.\\
+Les challenges devront être classifiés dans une des catégories suivantes : Web, Forensics, Reverse, Pwn, OSINT/Recon, Programmation, Hardware/Réseau, Stéganographie, Cryptographie, Blockchain/S3, Misc. Toutes les catégories ne devront pas forcément être représentées.  Toute autre catégorie non mentionnée ici devra être approuvée par l’association.\\
 Les flags devront tous suivre le format suivant (et en respectant la casse): \verb+dvCTF{ascii}+.\\
 Plusieurs contraintes techniques vont être présentes pour la création des challenges.
 
     \subsection{Challenges dynamiques}
 
-Les challenges dits « dynamiques » sont des challenges ayant besoin d’une connection à internet (très souvent dans les catégories pwn, web, cryptographie).
+Les challenges dits « dynamiques » sont des challenges ayant besoin d’une connexion à internet (très souvent dans les catégories pwn, web, cryptographie).
 
     \begin{itemize}
-        \item{Chaque challenge devra être soumis par son créateur sous la forme d’un ou plusieurs conteneurs docker (avec des permissions minimums, voir ce lien et autres documentation pour éviter tout problèmes en cas de compromission de la machine) pour une mise en production et un redémarrage plus rapide en cas de problèmes.}
+        \item{Chaque challenge devra être soumis par son créateur sous la forme d’un ou plusieurs conteneurs docker (avec des permissions minimums, voir ce lien et autres documentations pour éviter tout problèmes en cas de compromission de la machine) pour une mise en production et un redémarrage plus rapide en cas de problèmes.}
         \item{Un seul serveur sera mis à disposition de l’équipe pour faire leurs tests. Ce serveur sera accessible à travers un VPN Wireguard pour éviter les regards indiscrets (participants ayant accès aux challenges avant le début du CTF). Un deuxième serveur, plus performant, sera disponible pendant et après le CTF pour les challenges dynamiques, et le premier sera monté en gamme pour permettre l’hébergement du CTFd (plateforme de soumissions des flags) ainsi que de la base de données avec les challenges statiques.}
     \end{itemize}
 
