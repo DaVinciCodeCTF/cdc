@@ -1,0 +1,122 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\usepackage{hyperref}
+\geometry{% A4
+    a4paper,
+    inner=10mm,
+    outer=10mm,
+    top=10mm,
+    columnsep=4mm,
+    footskip=2mm
+    }
+
+    %\geometry{landscape}                % Activate for for rotated page geometry
+    %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+    \usepackage{graphicx}
+    \graphicspath{{img/}}
+    \usepackage{amssymb}
+    \usepackage{davincicode}
+    \usepackage{multicol}
+    \usepackage{shadowtext}
+
+    \usepackage{fancyhdr}
+
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyfootoffset[RO,LE]{0mm}
+    \fancyfoot[C]{\bf\color{red}}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+
+    % Will Robertson's fontspec.sty can be used to simplify font choices.
+    % To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+    % and change "Hoefler Text" to any of these choices.
+
+    \usepackage{fontspec,xltxtra,xunicode}
+    %\defaultfontfeatures{Mapping=tex-text}
+    %\setromanfont[Mapping=tex-text]{Hoefler Text}
+    %\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+    %\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+    %\title{Brief Article}
+    %\author{The Author}
+    %\date{}                                           % Activate to display a given date or no date
+
+    \begin{document}
+
+    \backgroundpages
+    \setlength{\columnsep}{-1cm}
+    \begin{multicols}{2}\raggedbottom\color{white}
+        \noindent
+        \parbox[t][40mm][t]{\columnwidth}{\setlength{\parindent}{1em}
+        \vspace*{-18mm}
+        \includegraphics[height=30mm]{davincicode}
+        \includegraphics[height=30mm]{esilv}
+        %\vspace*{5mm}
+        }
+
+        \noindent
+        \parbox[c][40mm][c]{\columnwidth}{\setlength{\parindent}{0em}
+        %\vfill
+        \shadowoffsetx{1pt}
+        \shadowoffsety{0pt}
+        \shadowcolor{black}
+        \vspace*{-24mm}
+        \shadowtext{\noindent{\Huge \textsc{DaVinciCode}}}
+        \vspace{0.5cm}
+        \shadowtext{\Large \textbf{Autocrypton}: Cahier des charges}
+        %\vspace*{\vfill}
+        }
+
+    \end{multicols}
+    %\vspace*{2mm}
+    \vspace*{-30mm}
+    \raggedbottom
+    \section{Introduction}
+    Le projet autocrypton est inspiré par le projet Crypton par Ashutosh Ahelleya: \url{https://github.com/ashutosh1206/Crypton}. Ce projet a pour but d'étoffer la liste de crypton pour lister toutes les attaques fréquentes en CTF dans la catégorie de cryptographie. En deuxième partie, le projet se concentrera sur la création d'un arbre de décision interactif sur une application web.
+
+	\section{Connaissances}
+    \subsection{Connaissances nécessaires}
+    \begin{itemize}
+        \item{Bonnes connaissances et maîtrise de l'arithmétique et de l'algèbre}
+        \item{Maîtrise de python et/ou Sage}
+    \end{itemize}
+
+	\subsection{Connaissances appréciées}
+	\begin{itemize}
+		\item Maîtrise de domaine de la cryptographie: RSA, AES, ECDSA, LLL, Sbox...
+		\item Gitlab CI/CD
+		\item Maîtrise d'un langage web (PHP ou JS) ou framework.
+	\end{itemize}
+
+    \section{Détails techniques}
+    \subsection{Arbre de décision}
+    L'interface web de l'arbre de décision sera simplement des cases à cocher, comme par exemple le premier embranchement serait le choix du système cryptographique à attaquer, si l'utilisateur choisit RSA, le deuxième embranchement demandera les valeurs que le challenge donne (N, c, e, phi, d, etc.)
+    \subsection{Liste exhaustives d'attaques}
+    Le premier but du projet est de faire une liste exhaustive des attaques sur les systèmes de cryptographie suivants:
+    \begin{itemize}
+    	\item Block ciphers (AES)
+    	\item RSA
+    	\item MAC/Hashes
+    	\item LLL (Latice reduction)
+    	\item DLP (Discrete Logarithm Problem)
+    	\item ECDSA (Elliptic Curves)
+    	\item Diffie Hellman
+    \end{itemize}
+	Chaque ajout d'attaque doit comprendre les informations suivantes :
+	\begin{itemize}
+		\item Trouver à l'aide de challenge de CTF: quelle est la faille qui permet cette attaque ?
+		\item Quels sont les paramètres quantifiables permettant cette attaque ?
+		\item Comment peut-on implémenter l'attaque ?
+	\end{itemize}
+	L'implémentation de l'attaque sera à discuter en fonction de sa complexité, si l'implémentation semble avoir besoin de beaucoup de customisation, l'output final de l'arbre de décision sera un snippet python ou sage. A l'inverse, si l'implémentation est très simple et direct, l'arbre de décision pourrait essayer de lancer lui-même l'attaque et l'output final serait le résultat ou flag.
+
+\end{document}  
