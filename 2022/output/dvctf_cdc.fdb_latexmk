@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1661249906 "output/dvctf_cdc.xdv" "output/dvctf_cdc.pdf" "output/dvctf_cdc" 1661249907
-  "output/dvctf_cdc.xdv" 1661249906 51520 a79da6634e28ba60372a45f3cecc7283 "xelatex"
+["xdvipdfmx"] 1661285632 "output/dvctf_cdc.xdv" "output/dvctf_cdc.pdf" "output/dvctf_cdc" 1661285632
+  "output/dvctf_cdc.xdv" 1661285632 59524 649780eb1c0ebd954f76e9d00b712b09 "xelatex"
   (generated)
   "output/dvctf_cdc.pdf"
-["xelatex"] 1661249905 "dvctf_cdc.tex" "output/dvctf_cdc.xdv" "dvctf_cdc" 1661249907
+["xelatex"] 1661285631 "dvctf_cdc.tex" "output/dvctf_cdc.xdv" "dvctf_cdc" 1661285632
   "/etc/texmf/web2c/texmf.cnf" 1654081957 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -132,10 +132,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1661249197 5133034 d85030ca9b00747617191d3e2364cc3c ""
   "davincicode.sty" 1661245477 1034 a606c986af0f98a289346ad90cad3b94 ""
-  "dvctf_cdc.tex" 1661248475 6818 7610fca37ad1221220a270930bb9befc ""
+  "dvctf_cdc.tex" 1661285622 7790 31f5b5418a9f148d91e3c379bb58f280 ""
   "img//davincicode.pdf" 1661245477 689333 37dc4c1f6cbcffb925c498240263d29c ""
   "img//esilv.eps" 1661245477 718342 c66482a062646ae1fc929edf2aa5e33b ""
-  "output/dvctf_cdc.aux" 1661249906 614 dc017fee318631f83cac871e667b7ebc "xelatex"
+  "output/dvctf_cdc.aux" 1661285632 1076 7cfc0c92fb8344f99c4c8ddffb80e565 "xelatex"
   (generated)
   "output/dvctf_cdc.aux"
   "output/dvctf_cdc.log"

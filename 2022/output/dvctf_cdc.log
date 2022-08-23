@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.8.23)  23 AUG 2022 12:18
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.8.23)  23 AUG 2022 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,21 +725,21 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Missing character: There is no   (U+202F) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no   (U+202F) in font [lmroman12-regular]:mapping=t
-ex-text;!
-[1
+) [1
 
-] [2] (output/dvctf_cdc.aux) ) 
+]
+Missing character: There is no   (U+202F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no   (U+202F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+[2] [3] (output/dvctf_cdc.aux) ) 
 Here is how much of TeX's memory you used:
  19356 strings out of 476191
  421714 string characters out of 5812072
- 747749 words of memory out of 5000000
+ 746767 words of memory out of 5000000
  39779 multiletter control sequences out of 15000+600000
  474016 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,11n,94p,811b,923s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,11n,94p,815b,923s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on output/dvctf_cdc.xdv (2 pages, 51520 bytes).
+Output written on output/dvctf_cdc.xdv (3 pages, 59524 bytes).
