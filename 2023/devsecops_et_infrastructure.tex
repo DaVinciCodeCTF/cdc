@@ -9,177 +9,196 @@
 \documentclass[12pt]{article}
 \usepackage{geometry}               % See geometry.pdf to learn the layout options. There are lots.
 \geometry{% A4
-    a4paper,
-    inner=10mm,
-    outer=10mm,
-    top=10mm,
-    columnsep=4mm,
-    footskip=2mm
-    }
+	a4paper,
+	inner=10mm,
+	outer=10mm,
+	top=10mm,
+	columnsep=4mm,
+	footskip=2mm
+}
 
-    %\geometry{landscape}                % Activate for for rotated page geometry
-    %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
-    \usepackage{graphicx}
-    \graphicspath{{img/}}
-    \usepackage{amssymb}
-    \usepackage{davincicode}
-    \usepackage{multicol}
-    \usepackage{shadowtext}
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\graphicspath{{img/}}
+\usepackage{amssymb}
+\usepackage{davincicode}
+\usepackage{multicol}
+\usepackage{shadowtext}
 
-    \usepackage{fancyhdr}
+\usepackage{fancyhdr}
 
-    \pagestyle{fancy}
-    \fancyhf{}
-    \fancyfootoffset[RO,LE]{0mm}
-    \fancyfoot[C]{\bf\color{red}}
-    \renewcommand{\headrulewidth}{0pt}
-    \renewcommand{\footrulewidth}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfootoffset[RO,LE]{0mm}
+\fancyfoot[C]{\bf\color{red}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-    % Will Robertson's fontspec.sty can be used to simplify font choices.
-    % To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
-    % and change "Hoefler Text" to any of these choices.
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
 
-    \usepackage{fontspec,xltxtra,xunicode}
-    %\defaultfontfeatures{Mapping=tex-text}
-    %\setromanfont[Mapping=tex-text]{Hoefler Text}
-    %\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
-    %\setmonofont[Scale=MatchLowercase]{Andale Mono}
+\usepackage{fontspec,xltxtra,xunicode}
+%\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont[Mapping=tex-text]{Hoefler Text}
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
 
-    %\title{Brief Article}
-    %\author{The Author}
-    %\date{}                                           % Activate to display a given date or no date
+%\title{Brief Article}
+%\author{The Author}
+%\date{}                                           % Activate to display a given date or no date
 
-    \begin{document}
-
-    \backgroundpages
-    \setlength{\columnsep}{-4cm}
-    \begin{multicols}{3}\raggedbottom\color{white}
-        \noindent
-        \parbox[t][45mm][t]{\columnwidth}{\setlength{\parindent}{1em}
-        \vspace*{-18mm}
-        \includegraphics[height=30mm]{davincicode}
-        %\vspace*{5mm}
-        }
-
-        \noindent
-        \parbox[c][40mm][c]{\columnwidth}{\setlength{\parindent}{0em}
-        %\vfill
-        \centering
-        \shadowoffsetx{1pt}
-        \shadowoffsety{0pt}
-        \shadowcolor{black}
-        \vspace*{-38mm}
-        \shadowtext{\noindent{\Huge \textsc{DaVinciCode}}}
-        \vspace{0.7cm}
-        \shadowtext{\Large \textbf{Cahier des charges 2024}}
-        \vspace{0.2cm}
-        \shadowtext{\Large \textbf{DevSecOps et Infrastructure}}    
-        %\vspace*{\vfill}
-        }
-
-        \parbox[t][45mm][t]{\columnwidth}{\setlength{\parindent}{12em}
-        \vspace*{-18mm}
-        \includegraphics[height=30mm]{esilv}
-        %\vspace*{5mm}
-        }
-        
-
-    \end{multicols}
-    %\vspace*{2mm}
-    \vspace*{-30mm}
-    \raggedbottom
-    
-    \section{Introduction}   
-    Le système d'information de l'association DaVinciCode évolue rapidement vers un système d'information similaire à celui d'une entreprise. Pour répondre à cette évolution, nous cherchons à administrer, sécuriser et développer notre infrastructure informatique, afin de fournir des services de qualité à nos membres.
-    \bigskip
-
-    \noindent En intégrant notre équipe, vous acquerrez des compétences pratiques avec des outils professionnels tels que Docker, Terraform, Ansible, GitLab CI/CD, et bien plus encore.
-    
-    \bigskip
-
-    \noindent L'expérience acquise vous sera précieuse pour votre future carrière dans l'informatique et la cybersécurité.
-
-
+\begin{document}
 	
-    \section{Informations pratiques}
+	\backgroundpages
+	\setlength{\columnsep}{-4cm}
+	\begin{multicols}{3}\raggedbottom\color{white}
+		\noindent
+		\parbox[t][45mm][t]{\columnwidth}{\setlength{\parindent}{1em}
+			\vspace*{-18mm}
+			\includegraphics[height=30mm]{davincicode}
+			%\vspace*{5mm}
+		}
+		
+		\noindent
+		\parbox[c][40mm][c]{\columnwidth}{\setlength{\parindent}{0em}
+			%\vfill
+			\centering
+			\shadowoffsetx{1pt}
+			\shadowoffsety{0pt}
+			\shadowcolor{black}
+			\vspace*{-38mm}
+			\shadowtext{\noindent{\Huge \textsc{DaVinciCode}}}
+			\vspace{0.7cm}
+			\shadowtext{\Large \textbf{Cahier des charges 2024}}
+			\vspace{0.2cm}
+			\shadowtext{\Large \textbf{DevSecOps et Infrastructure}}    
+			%\vspace*{\vfill}
+		}
+		
+		\parbox[t][45mm][t]{\columnwidth}{\setlength{\parindent}{12em}
+			\vspace*{-18mm}
+			\includegraphics[height=30mm]{esilv}
+			%\vspace*{5mm}
+		}
+		
+		
+	\end{multicols}
+	%\vspace*{2mm}
+	\vspace*{-30mm}
+	\raggedbottom
+	
+	\section{Introduction}   
+	Le système d'information de l'association DaVinciCode évolue rapidement vers un système d'information similaire à celui d'une entreprise. Pour répondre à cette évolution, nous cherchons à administrer, sécuriser et développer notre infrastructure informatique, afin de fournir des services de qualité à nos membres.
+	\bigskip
+	
+	\noindent En intégrant notre équipe, vous acquerrez des compétences pratiques avec des outils professionnels tels que Docker, Python, Proxmox, Terraform, Ansible, GitLab CI/CD, et bien plus encore.
+	
+	\bigskip
+	
+	\noindent L'expérience acquise vous sera précieuse pour votre future carrière dans l'informatique et la cybersécurité.
+	
+	
+	
+	\section{Informations pratiques}
 	\subsection{Années recherchées}
-    Nous recherchons en priorité des étudiants des années A4 et A5 pour faire partie du projet. Cependant, nous encourageons également les étudiants des années A1, A2 et A3 qui estiment être compétents à postuler.
-    \subsection{Compétance requises}
-    Les candidats doivent posséder des compétences/notions de base dans les domaines suivants :
+	Nous recherchons en priorité des étudiants des années A4 et A5 pour faire partie du projet. Cependant, nous encourageons également les étudiants des années A1, A2 et A3 qui estiment être compétents à postuler.
+	\subsection{Compétance requises}
+	Les candidats doivent posséder des compétences/notions de base dans les domaines suivants :
 	\begin{itemize}
-        \setlength\itemsep{0pt}
-        \item Maîtrise d'au moins un langage de programmation couramment utilisé tel que Python.
-        \item Capacité à utiliser efficacement une distribution Linux pour des tâches d'administration et de développement.
-        \item Compréhension des concepts de base de la méthodologie DevSecOps.
-        \item Capacité d'apprendre de nouvelles technologies et de se documenter de manière autonome.
-        \item Capacité à travailler en équipe et à communiquer efficacement.
-        
+		\setlength\itemsep{0pt}
+		\item Maîtrise d'au moins un langage de scripting couramment utilisé tel que Python.
+		\item Capacité à utiliser efficacement une distribution Linux pour des tâches d'administration et de développement.
+		\item Compréhension des concepts de base de la méthodologie DevSecOps.
+		\item Compréhension et expression de l'anglais écrit.
+		\item Capacité d'apprendre de nouvelles technologies et de se documenter de manière autonome.
+		\item Capacité à travailler en équipe et à communiquer efficacement.
+		
 	\end{itemize}
 	
 	\subsection{Connaissances appréciées}
-    Bien que les compétences énumérées ci-dessus soient essentielles, nous apprécierons également les candidats possédant des connaissances dans les domaines suivants :
+	Bien que les compétences énumérées ci-dessus soient essentielles, nous apprécierons également les candidats possédant des connaissances dans les domaines suivants :
 	\begin{itemize}
-        \setlength\itemsep{0pt}
-        \item Connaissance des conteneurs et de leur orchestration (Docker, Kubernetes, etc.)
-        \item Connaissance de l'administration système et de la gestion de ressources virtualisées (Proxmox).
-        \item Expérience dans le développement d'applications ou de sites web.
-        \item Expérience avec des outils d'Infrastructure as Code (Terraform, Ansible, etc.).
-        \item Expérience avec des plateformes de gestion de l'identité et d'accès.
-        \item Expérience dans la mise en place de Virtual Private Network (VPN).
+		\setlength\itemsep{0pt}
+		\item Connaissance des conteneurs et de leur orchestration (Docker, Kubernetes, etc.)
+		\item Connaissance de l'administration système et de la gestion de ressources virtualisées (Proxmox).
+		\item Expérience dans le développement de robot/chatbot ou d'applications web.
+		\item Expérience avec des outils d'Infrastructure as Code (Terraform, Ansible, etc.).
+		\item Expérience avec des plateformes de gestion de l'identité et d'accès (IAM/SSO).
+		\item Expérience dans la mise en place de Virtual Private Network (VPN).
+	\end{itemize}
+	
+	\section{Détail du projet}
+	Le projet "DevSecOps et Infrastructure" se déploiera en trois équipes, chacune avec des objectifs spécifiques pour atteindre notre vision globale:
+	\begin{itemize}
+		\item L'équipe Administration sera chargée de gérer et maintenir l'infrastructure tout en mettant en place de nouveaux services. 
+		\item L'équipe DevOps aura pour tâche de mettre en œuvre l'automatisation efficace des opérations, en se concentrant sur l'automatisation notamment par le biais de Gitlab. 
+		\item Enfin, l'équipe DevSec se concentrera sur la sécurisation de l'infrastructure et des applications en appliquant les meilleures pratiques de sécurité et de développement. 
+	\end{itemize}
+	
+	\noindent Chaque équipe jouera un rôle essentiel dans la réussite du projet, en collaborant étroitement pour fournir un environnement numérique sûr, fiable, utile et performant pour notre association.
+	
+	\section{Détails techniques}
+	
+	\subsection{Administration}
+	L'équipe d'Administration se concentrera sur la protection globale de l'infrastructure et des données. 
+	\bigskip
+	
+	\noindent Ils seront chargés entre autre de la mise en place de reseaux privés virtuels (VPN) pour les serveurs et membres de l'association et de sécuriser le serveur de production en implementant un Web Application Firewall. 
+	\bigskip
+	
+	\noindent Ils mettront également en place un système de sauvegarde sécurisée des données, pour les applications déjà existantes ainsi que des snapshots et des backups de nos serveurs privés virtuels (VPS) sur nos machines physiques. 
+	\bigskip
+	
+	\noindent Enfin, ils renforceront les mesures de sécurité pour les différents services conteneurisés conformément  à l'ANSSI et maintiendront ces services à jour en continu.
+	
+	\bigskip
+	
+	\noindent \textbf{Compétences travaillées :} Docker, Proxmox, Linux, VPN, WAF
+	
+	\subsection{DevOps}
+	L'équipe DevOps sera responsable de l'automatisation des opérations de développement et de déploiement. Ils mettront en place des pipelines CI/CD pour faciliter la mise en opération des répos GitLab. 
+	\bigskip
+	
+	\noindent De plus, ils traiteront un projet visant à déployer des machines virtuelles (VMs) de pentest automatiquement pour les membres de l'association. Ils seront chargés de créer et maintenir une image ISO personalisée et ils utiliseront des outils tels que Terraform, Ansible et Cloudinit pour configurer ces VMs. 
+	\bigskip
+	
+	\noindent Ils faciliteront également l'accès aux VMs en mettant en place un outil de bureaux à distance utilisant Apache Guacamole.
+	
+	\bigskip
+	
+	\noindent \textbf{Compétences travaillées :}  Python, Pipelines CI/CD, GitLab, Terraform, Ansible, Build d'ISO.
+	
+	
+	\subsection{DevSec}
+	L'équipe DevSec sera chargée d'améliorer la securité du système d'information en mettant, en place des moyens pour monitorer l'infrastructure, en générant des rapports et des alertes automatique afin de détecter rapidement les problèmes potentiels.
+	\bigskip
+	
+	\noindent Ils développeront en parallèle de nouveaux services pour les membres de l'association et créeront des connecteurs entre nos applications et notre gestionnaire d'identité. 
+	\bigskip
+	
+	\noindent Enfin ils pourront explorer des domaines tels que l'apprentissage automatique (IA) pour des tâches spécifiques.
+	\bigskip
+	
+	\noindent \textbf{Compétences travaillées :} Python, Dev Web, Monitoring, Keycloak, Vault, LLaMa
+	
+	\section{Evaluation des compétences}
+	
+	Afin d'évaluer les compétences des étudiants intéressés pour participer au projet, un challenge technique de une à deux semaines, différent pour chaque équipe, sera proposé.
+	Chaque challenge, indépendamment de  l'équipe visée, doit être réalisé selon les règles suivantes :
+	\begin{itemize}
+		\item Le challenge doit être réalisé seul.
+		\item Le rendu final est un lien web vers un dépôt distant github public comportant au moins, a sa racine, un fichier \texttt{docker-compose.yml}.
+		\item Chaque challenge devra fonctionner sur une installation la plus récente de debian (12),docker (24) et docker-compose (2.20).
+		\item L'utilisation de l'IA est autorisée.
+		\item Un entretien final portera en partie sur la réalisation de ce challenge ainsi que des difficultés rencontrées et solutions trouvées.
+		\item Aucune discrimination ne sera faite sur la qualité visuel d'un rendu web, mais il ne sera jugé uniquement sur la fonctionnalité et la clarté du rendu, ainsi que la qualité du code et sa compréhension lors de l'entretien.
 	\end{itemize}
 
-    \section{Détail du projet}
-    Le projet "DevSecOps et Infrastructure" se déploiera en trois équipes, chacune avec des objectifs spécifiques pour atteindre notre vision globale:
-    \begin{itemize}
-        \item L'équipe Administration sera chargée de gérer et maintenir l'infrastructure tout en mettant en place de nouveaux services. 
-        \item L'équipe DevOps aura pour tâche de mettre en œuvre l'automatisation efficace des opérations, en se concentrant sur l'automatisation notamment par le biais de Gitlab. 
-        \item Enfin, l'équipe DevSec se concentrera sur la sécurisation de l'infrastructure et des applications en appliquant les meilleures pratiques de sécurité et de développement. 
-    \end{itemize}
-
-    \noindent Chaque équipe jouera un rôle essentiel dans la réussite du projet, en collaborant étroitement pour fournir un environnement numérique sûr, fiable, utile et performant pour notre association.
-
-    \section{Détails techniques}
-
-    \subsection{Administration}
-    L'équipe d'Administration se concentrera sur la protection globale de l'infrastructure et des données. 
-    \bigskip
-    
-    \noindent Ils seront chargés de la mise en place de reseaux privés virtuels (VPN) pour les serveurs et membres de l'association et de sécuriser le serveur de production en implementant un Web Application Firewall. 
-    \bigskip
-
-    \noindent Ils mettront également en place un système de sauvegarde sécurisée des données, pour les applications déjà existantes ainsi que des snapshots et des backups de nos serveurs privés virtuels (VPS) sur nos machines physiques. 
-    \bigskip
-
-    \noindent Enfin, ils renforceront les mesures de sécurité pour les différents services conteneurisés conformément  à l'ANSSI et maintiendront ces services à jour en continu.
-    
-    \bigskip
-
-    \noindent \textbf{Compétences travaillées :} Docker, Proxmox, Linux, VPN, WAF
-    
-    \subsection{DevOps}
-    L'équipe DevOps sera responsable de l'automatisation des opérations de développement et de déploiement. Ils mettront en place des pipelines CI/CD pour faciliter la mise en opération des répos GitLab. 
-    \bigskip
-
-    \noindent De plus, ils traiteront un projet visant à déployer des machines virtuelles (VMs) de pentest automatiquement pour les membres de l'association. Ils seront chargés de créer et maintenir une image ISO personalisée et ils utiliseront des outils tels que Terraform, Ansible et Cloudinit pour configurer ces VMs. 
-    \bigskip
-
-    \noindent Ils faciliteront également l'accès aux VMs en mettant en place un outil de bureaux à distance utilisant Apache Guacamole.
-    
-    \bigskip
-
-    \noindent \textbf{Compétences travaillées :}  Python, Pipelines CI/CD, GitLab, Terraform, Ansible, Build d'ISO.
-
-
-    \subsection{DevSec}
-    L'équipe DevSec sera chargée d'améliorer la securité du système d'information en mettant, en place des moyens pour monitorer l'infrastructure, en générant des rapports et des alertes automatique afin de détecter rapidement les problèmes potentiels.
-    \bigskip
-
-    \noindent Ils développeront en parallèle de nouveaux services pour les membres de l'association et créeront des connecteurs entre nos applications et notre gestionnaire d'identité. 
-    \bigskip
-    
-    \noindent Enfin ils pourront explorer des domaines tels que l'apprentissage automatique (IA) pour des tâches spécifiques.
-    \bigskip
-
-    \noindent \textbf{Compétences travaillées :} Python, Dev Web, Monitoring, Keycloak, Vault, LLaMa
-
-\end{document}  
+	<Rajouter le lien vers le forms>
+	
+		
+	
+	
+\end{document}
