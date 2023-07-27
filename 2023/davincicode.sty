@@ -1,5 +1,6 @@
 \usepackage{xcolor}
-\definecolor{davincicode}{RGB}{29,191,197}
+%\definecolor{davincicode}{RGB}{29,191,197}
+\definecolor{davincicode}{RGB}{195, 0, 0}
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathmorphing}
 
@@ -11,7 +12,7 @@
             yshift=-2\paperheight
         ] (0,0) rectangle (4\paperwidth,4\paperheight);% white bg
         \fill [
-            red,
+            davincicode,
             decorate,
             decoration={random steps,segment length=26pt,amplitude=1.33pt},
             xshift=-0.75\paperwidth,
@@ -19,7 +20,7 @@
             yshift=-4cm
         ] (0,0) rectangle (1.5\paperwidth,1.5\paperheight);% top box
         \fill [
-            red,
+            davincicode,
             decorate,
             decoration={random steps,segment length=26pt,amplitude=1.33pt},
             xshift=-0.75\paperwidth,
