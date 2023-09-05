@@ -1,0 +1,138 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{% A4
+    a4paper,
+    inner=10mm,
+    outer=10mm,
+    top=10mm,
+    columnsep=4mm,
+    footskip=2mm
+    }
+
+    %\geometry{landscape}                % Activate for for rotated page geometry
+    %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+    \usepackage{graphicx}
+    \graphicspath{{img/}}
+    \usepackage{amssymb}
+    \usepackage{davincicode}
+    \usepackage{multicol}
+    \usepackage{shadowtext}
+
+    \usepackage{fancyhdr}
+
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyfootoffset[RO,LE]{0mm}
+    %\fancyfoot[C]{\bf\color{red}}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+
+    % Will Robertson's fontspec.sty can be used to simplify font choices.
+    % To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+    % and change "Hoefler Text" to any of these choices.
+
+    \usepackage{fontspec,xltxtra,xunicode}
+    %\defaultfontfeatures{Mapping=tex-text}
+    %\setromanfont[Mapping=tex-text]{Hoefler Text}
+    %\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+    %\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+    %\title{Brief Article}
+    %\author{The Author}
+    %\date{}                                           % Activate to display a given date or no date
+
+    \begin{document}
+
+    \backgroundpages
+    \setlength{\columnsep}{-1cm}
+    \begin{multicols}{2}\raggedbottom\color{white}
+        \noindent
+        \parbox[t][40mm][t]{\columnwidth}{\setlength{\parindent}{1em}
+        \vspace*{-18mm}
+        \includegraphics[height=30mm]{davincicode}
+        \includegraphics[height=30mm]{esilv}
+        %\vspace*{5mm}
+        }
+
+        \noindent
+        \parbox[c][40mm][c]{\columnwidth}{\setlength{\parindent}{0em}
+        %\vfill
+        \shadowoffsetx{1pt}
+        \shadowoffsety{0pt}
+        \shadowcolor{black}
+        \vspace*{-24mm}
+        \shadowtext{\noindent{\Huge \textsc{DaVinciCode}}}
+        \vspace{0.5cm}
+        \shadowtext{\Large \textbf{Team CTF}: Cahier des charges}
+        %\vspace*{\vfill}
+        }
+
+    \end{multicols}
+    %\vspace*{2mm}
+    \vspace*{-30mm}
+    \raggedbottom
+    \section{Introduction}
+
+    Une compétition Capture The Flag (CTF) est une compétition de cybersécurité, dans laquelle les participants doivent énumérer et exploiter des failles informatiques dans des environnements délibérément vulnérables afin de retrouver des flags (des chaînes de caractères formatées et donc facilement repérables, tel que \verb+ESILV{c3c1_3st_1_fl4g}+) qui leur permet d’obtenir des points.\\ 
+    Ces compétitions regroupent plusieurs catégories, telles que la cryptographie, la stéganographie, le web, l’algorithmie, etc.
+    Les CTF s’adressent aux personnes intéressées par la sécurité informatique et qui souhaitent s’exercer et apprendre : les participants partagent leurs solutions des challenges à la fin de la compétition.
+
+    Cette année DaVinciCode souhaite préparer une équipe pour représenter l'ESILV à l'European CyberCup (EC2).
+
+	\section{Informations pratiques}
+	\subsection{Années recherchées}
+	\begin{itemize}
+		\item A2
+		\item A3
+		\item A4
+		\item A5
+	\end{itemize}
+
+    \subsection{Connaissances pré-requises}
+	\begin{itemize}
+		\item Participation à des CTF et/ou wargames 
+        \item Investissement personnel sur des plateformes d'entraînement (Root-me, THM, HTB)
+		\item Maîtrise d'un langage de programmation
+        \item Connaissances dans une des catégories de CTF 
+		\begin{itemize}
+			\item Reverse Engineering
+			\item Web
+			\item Pwn
+			\item Cryptographie
+			\item Stéganographie
+            \item Réseau
+            \item Forensics
+            \item Hardware
+            \item OSINT
+            \item Pentest
+            \item Active Directory
+            \item IA
+			\item Web3
+		\end{itemize}
+		\item Maîtrise de l'anglais lu, écrit parlé
+	\end{itemize}
+	
+	\subsection{Qualités requises}
+	\begin{itemize}
+		\item Motivation
+		\item Envie d'apprendre
+        \item Autonomie
+		\item Disponibilité
+	\end{itemize}
+
+    \section{Détail du projet}
+    La préparation pour l'EC2 qui aura lieu, en présentiel, en avril prochain, sur 3 jours, nous impose un rythme de préparation assez soutenu.
+    L'objectif est de participer en équipe à au minimum deux CTF par mois. Les étudiants devront également faire d'autres challenges et des entraînements sur des plateformes dédiées.
+    
+    Il est attendu des étudiants qu'ils produisent un Write-Up pour l'ensemble des challenges qu'ils ont résolu.
+    Une réunion par semaine sera programmée avec les chefs de projet pour suivre l'avancement personnel et celui de l'équipe.
+
+\end{document}  
